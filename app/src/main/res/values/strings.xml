@@ -6,4 +6,6 @@
     <string name="meetfragment">Привет, это MeetFragment</string>
     <string name="profilefragment">Привет, это ProfileFragment.</string>
     <string name="settingsfragment">Привет, это SettingsFragment.</string>
+    <string name="hours_minutes_format">HH:MM</string>
+    <string name="mero_name">Название мероприятия</string>
 </resources>
