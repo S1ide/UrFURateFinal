@@ -62,6 +62,7 @@
         <TextView
             android:id="@+id/meetName"
             android:paddingStart="10dp"
+            android:paddingEnd="10dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/mero_name"

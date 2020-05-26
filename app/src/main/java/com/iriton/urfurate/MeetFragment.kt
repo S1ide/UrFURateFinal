@@ -24,9 +24,11 @@ class MeetFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         myRecycler.layoutManager = LinearLayoutManager(this.activity)
-        val items = listOf(MeetItem("15:00", "17:00", "Поход в музей", "Скоро"),
-            MeetItem("16:00", "18:30", "Поход в кино", "Скоро")
+        val items = mutableListOf(MeetItem("15:00", "17:00", "Поход в музей", "Скоро", "IRIT-RtF"),
+            MeetItem("16:00", "18:30", "Поход в кино", "Скоро", "HTI"),
+            MeetItem("13:00", "15:30", "Поход в кино", "Скоро","FTI")
         )
+        items.sortBy {it.timeOfStart}
         val myAdapter = MeetAdapter(items, object : MeetAdapter.Callback {
             override fun onItemClicked(item: MeetItem) {
                 //TODO Сюда придёт элемент, по которому кликнули. Можно дальше с ним работать
