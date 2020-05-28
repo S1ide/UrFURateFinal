@@ -7,12 +7,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
-    <CalendarView
-        android:id="@+id/calendar"
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:minDate="01/01/2020"
-        />
+        android:layout_height="450dp"
+        app:headerColor="@color/pink"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/myRecycler"

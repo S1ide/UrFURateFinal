@@ -8,7 +8,7 @@
 
     <item
         android:id="@+id/navigation_meet"
-        android:icon="@drawable/logowback"
+        android:icon="@drawable/logo_urfu"
         android:title="@string/title_meet"/>
 
     <item
