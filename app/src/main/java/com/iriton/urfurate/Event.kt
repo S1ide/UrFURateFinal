@@ -10,5 +10,5 @@ data class Event (
     val logo : Int,
     val year : Int,
     val month : Int,
-    val date : Int
+    val day : Int
 )
