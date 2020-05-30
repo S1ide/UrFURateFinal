@@ -11,7 +11,10 @@
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="450dp"
-        app:headerColor="@color/pink"/>
+        app:todayLabelColor="@color/dark_red"
+        app:headerColor="@color/dark_red"
+        app:abbreviationsLabelsColor="@color/dark_grey">
+    </com.applandeo.materialcalendarview.CalendarView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/myRecycler"
@@ -22,6 +25,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        tools:listitem="@layout/main_item" />
+        tools:listitem="@layout/main_item">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </LinearLayout>
