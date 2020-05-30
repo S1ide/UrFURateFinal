@@ -14,7 +14,6 @@ import java.util.*
 class MeetFragment : Fragment() {
 
     private val eventsDay = mutableListOf<EventDay>() // Список мероприятий для добавления точек в Календарь
-    private val calendar = Calendar.getInstance() // Текущая дата
     private var events = mutableListOf<Event>() //Лист с мероприятиями
     private var selectedEvents = mutableListOf<Event>() // Лист с текущими мероприятиями
 
@@ -49,12 +48,13 @@ class MeetFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         events.forEach { // Пробегаемся по всем мероприятиям
+            val calendar = Calendar.getInstance()
             calendar.set(it.year, it.month , it.day) // Установка калелендаря на нужную дату
             eventsDay.add(EventDay(calendar, R.drawable.tochka)) // Добавление мероприятия в список для установки, с R.drawable
         }
         calendarView.setEvents(eventsDay) // Установка всех "точек"
 
-        var myAdapter = MeetAdapter(events, object : MeetAdapter.Callback {
+        val myAdapter = MeetAdapter(events, object : MeetAdapter.Callback {
             override fun onItemClicked(item: Event) {
                 //TODO Сюда придёт элемент, по которому кликнули. Можно дальше с ним работать
             }
