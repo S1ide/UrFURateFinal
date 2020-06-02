@@ -11,6 +11,10 @@ import kotlinx.android.synthetic.main.fragment_meet.*
 
 class MainActivity : AppCompatActivity() {
 
+    companion object {
+        const val USER_KEY = "USER_KEY"
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

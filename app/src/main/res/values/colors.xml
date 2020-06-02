@@ -10,4 +10,5 @@
     <color name="black">#000000</color>
     <color name="dark_red">#952222</color>
     <color name="dark_grey">#363131</color>
+    <color name="colorFocused">#bbdefb</color>
 </resources>

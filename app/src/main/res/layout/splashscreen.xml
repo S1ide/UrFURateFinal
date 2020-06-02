@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="75dp"
+        android:src="@drawable/logo"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp" />
+
+    <ImageView
+        android:id="@+id/lastmoun"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_gravity="right|bottom"
+        android:src="@drawable/lastmoun" />
+
+    <ImageView
+        android:id="@+id/medmoun"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/medmoun"
+        />
+
+    <ImageView
+        android:id="@+id/firstmoun"
+        android:layout_width="wrap_content"
+        android:layout_height="369dp"
+        android:layout_gravity="bottom"
+        android:src="@drawable/firstmoun" />
+
+    <ImageView
+        android:id="@+id/loading"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/loading" />
+</FrameLayout>
